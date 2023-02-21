@@ -1,0 +1,32 @@
+{
+  "name": "@ai-ui/button",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "keywords": [
+    "button"
+  ],
+  "author": "fuyh5 <fuyh5@gitlab.devops.cmft>",
+  "homepage": "https://github.com/underFyh/AI-ui#readme",
+  "license": "ISC",
+  "main": "lib/button.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/underFyh/AI-ui.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/button.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/underFyh/AI-ui/issues"
+  }
+}
