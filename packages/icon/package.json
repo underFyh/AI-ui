@@ -1,0 +1,29 @@
+{
+  "name": "@ai-ui/icon",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "fuyh5 <fuyh5@gitlab.devops.cmft>",
+  "homepage": "https://github.com/underFyh/AI-ui#readme",
+  "license": "ISC",
+  "main": "lib/icon.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/underFyh/AI-ui.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/icon.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/underFyh/AI-ui/issues"
+  }
+}

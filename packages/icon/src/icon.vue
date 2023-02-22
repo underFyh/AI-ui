@@ -1,10 +1,11 @@
 <template>
-    <button>button</button>
+    <span>icon组件</span>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 export default defineComponent({
-    name: 'AiButton'
+    name: 'AiIcon'
 })
 </script>
+
