@@ -26,11 +26,11 @@ module.exports = {
                 use: 'vue-loader'
             },
             {
-                test: /\.(svg|ttf|woff|eot|gif|png)$/,
+                test: /\.(svg|ttf|woff|woff2|eot|gif|png)$/,
                 use: 'url-loader'
             },
             {
-                test: /\.(scss|css)\$/,
+                test: /\.(scss|css)$/,
                 use: [
                     'style-loader',
                     'css-loader',
