@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "declaration": true,
+    "sourceMap": true
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */
@@ -99,16 +108,5 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
 //    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
-    "compilerOptions": {
-      "target": "ESNext",
-      "module": "ESNext",
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true,
-      "moduleResolution": "node",
-      "jsx": "preserve",
-      "declaration": true,
-      "sourceMap": true
-    }
   }
 }

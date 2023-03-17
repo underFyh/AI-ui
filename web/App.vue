@@ -1,7 +1,7 @@
 <template>
     <div>
         <Ai-Button></Ai-Button>
-        <Ai-Icon name="bianji"></Ai-Icon>
+        <Ai-Icon name="bianji">icon</Ai-Icon>
     </div>
 </template>
 
