@@ -1,0 +1,64 @@
+@import "mixins/mixin.scss";
+@import "common/var.scss";
+
+// 定义按钮的文字背景边框样式
+@mixin button-type($color,$background-color,$border-color){
+  color:$color;
+  background-color:$background-color ;
+  border-color: $border-color;
+}
+
+@include b(button) {
+  // 基础样式
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #dcdfe6;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+
+  // 图标样式处理 - 文字和图标相距4像素
+  & [class*='ai-icon-'] {
+    & + span {
+      margin-left: 4px;
+    }
+  }
+
+  // 状态
+  @include when(disabled) {
+    cursor: not-allowed;
+  }
+  @include when(loading) {
+    pointer-events: none;
+  }
+  @include when(round) {
+    border-radius: 16px;
+  }
+
+  // 类型
+  @include m(primary){
+    @include button-type($--color-white,$--color-primary,$--color-primary)
+  }
+
+  @include m(success) {
+    @include button-type($--color-white,$--color-success,$--color-success)
+  }
+
+  @include m(info) {
+    @include button-type($--color-white,$--color-info,$--color-info)
+  }
+
+  @include m(warning) {
+    @include button-type($--color-white,$--color-warning,$--color-warning)
+  }
+
+  @include m(danger) {
+    @include button-type($--color-white,$--color-danger,$--color-danger)
+  }
+}

@@ -1,9 +1,11 @@
 import { App } from 'vue';
 import Button from '@ai-ui/button';
 import Icon from '@ai-ui/icon';
+import ButtonGroup from '@ai-ui/button-group'
 
 const subcomponents = [
     Button,
+    ButtonGroup,
     Icon
 ]
 
