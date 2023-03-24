@@ -14,6 +14,15 @@
             </Ai-Button>
         </Ai-Button-Group>
 <!--        <Ai-Icon name="bianji">icon</Ai-Icon>-->
+        <hr/>
+        <Ai-Row :gutter="10" justif="center">
+            <Ai-Col :span="6" :offset="6">
+                <div style="background-color: sandybrown">2</div>
+            </Ai-Col>
+            <Ai-Col :span="6">
+                <div style="background-color: skyblue">3</div>
+            </Ai-Col>
+        </Ai-Row>
     </div>
 </template>
 
