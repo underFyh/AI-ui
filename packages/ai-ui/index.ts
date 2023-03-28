@@ -4,13 +4,18 @@ import Icon from '@ai-ui/icon';
 import ButtonGroup from '@ai-ui/button-group'
 import Row from '@ai-ui/row';
 import Col from '@ai-ui/col';
+import Checkbox from '@ai-ui/checkbox';
+import CheckboxGroup from '@ai-ui/checkbox-group';
+
 
 const subcomponents = [
     Button,
     ButtonGroup,
     Icon,
     Row,
-    Col
+    Col,
+    Checkbox,
+    CheckboxGroup
 ]
 
 // 全局注册所有的子组件

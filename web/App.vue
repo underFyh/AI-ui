@@ -13,7 +13,6 @@
                 <i class="ai-icon-xiangyou"></i>
             </Ai-Button>
         </Ai-Button-Group>
-<!--        <Ai-Icon name="bianji">icon</Ai-Icon>-->
         <hr/>
         <Ai-Row :gutter="10" justif="center">
             <Ai-Col :span="6" :offset="6">
@@ -23,6 +22,9 @@
                 <div style="background-color: skyblue">3</div>
             </Ai-Col>
         </Ai-Row>
+        <hr/>
+        <Ai-Checkbox v-model="checkValue" @change="handleChangeEvent">{{ checkValue }}</Ai-Checkbox>
+        <Ai-Checkbox-Group></Ai-Checkbox-Group>
     </div>
 </template>
 
@@ -44,11 +46,22 @@ const useButton = () => {
         loading
     }
 }
+const useCheckbox = () => {
+    let checkValue = ref(true);
+    let handleChangeEvent = (val) => {
+        console.log('监听值:' + val);
+    }
+    return {
+        checkValue,
+        handleChangeEvent
+    }
+}
 export default defineComponent({
     name: 'App',
     setup() {
         return {
-            ...useButton()
+            ...useButton(),
+            ...useCheckbox()
         }
     }
 })
